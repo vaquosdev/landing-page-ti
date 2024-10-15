@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Furqon August Seventeenth">
+  <title>Jurusan Teknologi Informasi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css"
+    integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+    integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .fs-7 {
+      font-size: 69px;
+    }
+
+    .bg-image {
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2022/01/5039684-scaled.jpg');
+    }
+
+    .bg-image-content-1 {
+      background-size: cover;
+      height: 300px;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/08/IMG_4633-scaled.jpg');
+      background-position: center;
+    }
+
+    .bg-image-content-2 {
+      background-size: cover;
+      height: 300px;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/IMG-20240726-WA0093.jpg');
+      background-position: center;
+    }
+
+    .bg-image-content-3 {
+      background-size: cover;
+      height: 300px;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-26-at-12.57.29_3e225de4.jpg');
+      background-position: center;
+    }
+
+    .bg-image-content-4 {
+      background-size: cover;
+      height: 300px;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-26-at-12.51.12_9aa7eab1-scaled.jpg');
+      background-position: center;
+    }
+
+    .bg-image-content-5 {
+      background-size: cover;
+      height: 300px;
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg');
+      background-position: center;
+    }
+
+    .bg-image-pengumuman-1 {
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2023/10/pekan-it-scaled.jpg');
+      background-size: cover;
+      height: 300px;
+      background-position: center;
+    }
+
+    .bg-image-pengumuman-2 {
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2022/06/Kuliah-Umum.jpeg');
+      background-size: cover;
+      height: 300px;
+      background-position: center;
+    }
+
+    .bg-image-prestasi-1 {
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg');
+      background-size: cover;
+      height: 300px;
+      background-position: center;
+    }
+
+    .bg-image-prestasi-2 {
+      background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/hack4.png');
+      background-size: cover;
+      height: 300px;
+      background-position: center;
+    }
+
+    .text-gradient {
+      background-color: transparent;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(96, 91, 229, 0.87) 100%);
+      padding: 1rem;
+      color: white;
+      transition-duration: 0.7s;
+    }
+
+    .text-gradient-2 {
+      background-color: transparent;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(122, 122, 122, 0.87) 100%);
+      padding: 1rem;
+      color: white;
+      transition-duration: 0.7s;
+    }
+
+    .text-hover:hover~.text-gradient,
+    .text-hover:hover~.text-gradient-2 {
+      opacity: 0.5;
+    }
+
+    .divider {
+      width: 60px;
+      height: 5px;
+      background-color: rgb(0, 162, 255);
+    }
+
+
+    .divider-3 {
+      width: 200px;
+      height: 5px;
+      background-color: rgb(0, 162, 255);
+    }
+
+    .divider-2 {
+      width: 150px;
+      height: 5px;
+      background-color: rgb(0, 162, 255);
+    }
+
+    .divider-100 {
+      width: 100%;
+      height: 1px;
+    }
+  </style>
+</head>
+
+<body class="">
+  <!-- Heading -->
+  <div class="bg-primary bg-gradient">
+    <div class="container d-flex justify-content-end">
+      <i class="py-2 px-3 bi bi-facebook text-white border-start border-light" style="--bs-border-opacity: .15;"></i>
+      <i class="py-2 px-3 bi bi-instagram text-white border-start border-light" style="--bs-border-opacity: .15;"></i>
+      <i class="py-2 px-3 bi bi-youtube text-white border-start border-light" style="--bs-border-opacity: .15;"></i>
+      <i class="py-2 px-3 bi bi-search text-white border-start border-end border-light"
+        style="--bs-border-opacity: .15;"></i>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Study Programs
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item" href="tekom.html">D3 Teknik Komputer</a></li>
+              <li><a class="dropdown-item" href="mi.html">D3 Manajemen Informatika</a></li>
+              <li><a class="dropdown-item" href="trpl.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+              <li><a class="dropdown-item" href="animasi.html">D4 Animasi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="https://via.placeholder.com/1920x800" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="https://via.placeholder.com/1920x800" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="https://via.placeholder.com/1920x800" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary bg-gradient">
+    <div class="container py-4 d-flex justify-content-between">
+      <div class="w-auto">
+        <h4 class="m-0">Penerimaan Mahasiswa Baru</h4>
+        <span>Informasi Tentang Penerimaan Mahasiswa Baru Politeknik Negeri Padang</span>
+      </div>
+      <a href="https://penerimaan.pnp.ac.id" class="btn btn-light d-flex align-items-center px-5">
+        <span>Tampilkan Lebih Banyak</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- content -->
+  <div class="bg-white">
+    <div class="container py-5">
+      <div class="d-flex flex-column align-items-center mb-5">
+        <h3 class="fw-bold text-secondary text-center">Selamat Datang di Jurusan Teknologi Informasi</h3>
+        <div class="divider-3 mb-2 mt-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-calendar fs-1"></i>
+              <h5 class="card-title mt-2">Kalender Akademik</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Semua kegiatan proses pembelajaran Politeknik Negeri Padang dalam satu tahun
+                akademik
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-file fs-1"></i>
+              <h5 class="card-title mt-2">Akreditas Prodi</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Penilaian kelayakan Program Studi Jurusan Teknologi Informasi Politkenik Negeri
+                Padang
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-calendar-check fs-1"></i>
+              <h5 class="card-title mt-2">Jadwal Kuliah</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Jadwal Perkuliahan Semester Ganjil Tahun Ajaran 2024/2025 Jurusan Teknologi
+                Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-cloud-arrow-down fs-1"></i>
+              <h5 class="card-title mt-2">Download Area</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-book-reader fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">SPADA</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-book fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">SITA</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-regular fa-address-card fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">SIAKAD</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-building fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">MBKM</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-regular fa-address-card fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">SATIK</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card h-100">
+            <div class="card-body text-center d-flex flex-column align-items-center">
+              <i class="fa-solid fa-money-bill-wave fs-1 text-warning"></i>
+              <h5 class="card-title mt-2">UKT</h5>
+              <div class="divider mb-2 mt-1"></div>
+              <p class="card-text">Kumpulan Panduan / Standart Operating Prosedure Jurusan Teknologi Informasi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- news -->
+  <div class="bg-body-tertiary">
+    <div class="container py-5">
+      <div class="d-flex flex-column align-items-center mb-5">
+        <h3 class="fw-bold text-secondary text-center">Berita Baru</h3>
+        <div class="divider-2 mb-2 mt-1"></div>
+        <span class="text-body-tertiary">Berita Terbaru Seputar Jurusan Teknologi Informasi</span>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 p-1">
+          <div class="bg-image-content-1 w-100 position-relative">
+            <div class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+              <span class="fs-6 fw-light">news</span>
+              <span class="fs-5">SEMINAR MENTAL HEALTH DAN COMMUNICATION SKILL BAGI CIVITAS AKADEMIKA JURUSAN
+                TEKNOLOGI INFORMASI</span>
+              <span class="fs-6 fw-light">Furqon August Seventeenth - August 21, 2024</span>
+            </div>
+            <div class="text-gradient z-1 position-absolute top-0 w-100 h-100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+          <div class="bg-image-content-2 w-100 position-relative">
+            <div class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+              <span class="fs-6 fw-light">news</span>
+              <span class="fs-5">Kegiatan Audit Mutu Internal (AMI) di Jurusan Teknologi Informasi Politeknik Negeri
+                Padang</span>
+              <span class="fs-6 fw-light">Furqon August Seventeenth - August 21, 2024</span>
+            </div>
+            <div class="text-gradient z-1 position-absolute top-0 w-100 h-100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+          <div class="bg-image-content-3 w-100 position-relative">
+            <div class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+              <span class="fs-6 fw-light">news</span>
+              <span class="fs-5">Kegiatan Benchmarking Kurikulum dan PBL Jurusan Teknologi Informasi Politeknik Negeri
+                Padang</span>
+              <span class="fs-6 fw-light">Furqon August Seventeenth - August 21, 2024</span>
+            </div>
+            <div class="text-gradient z-1 position-absolute top-0 w-100 h-100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+          <div class="bg-image-content-4 w-100 position-relative">
+            <div class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+              <span class="fs-6 fw-light">news</span>
+              <span class="fs-5">Program Studi Manajemen Informasi Jurusan Teknologi Informasi Politeknik Negeri Padang
+                Jalani Asesmen Lapangan</span>
+              <span class="fs-6 fw-light">Furqon August Seventeenth - August 21, 2024</span>
+            </div>
+            <div class="text-gradient z-1 position-absolute top-0 w-100 h-100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+          <div class="bg-image-content-5 w-100 position-relative">
+            <div class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+              <span class="fs-6 fw-light">news</span>
+              <span class="fs-5">Tim PKM PM Politeknik Negeri Padang Rancang Website Untuk Rumah Singgah Pasien
+                M.Ihpan</span>
+              <span class="fs-6 fw-light">Furqon August Seventeenth - August 21, 2024</span>
+            </div>
+            <div class="text-gradient z-1 position-absolute top-0 w-100 h-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- statistik -->
+  <div class="bg-image">
+    <div class="container py-5 text-white">
+      <div class="row fw-bold">
+        <div class="col-lg-3 col-md-3 col-12 py-2 d-flex flex-column align-items-center">
+          <span class="fs-7 lh-1">986</span>
+          <span class="fs-4">Mahasiswa</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 py-2 d-flex flex-column align-items-center">
+          <span class="fs-7 lh-1">73</span>
+          <span class="fs-4">Dosen</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 py-2 d-flex flex-column align-items-center">
+          <span class="fs-7 lh-1">10</span>
+          <span class="fs-4">Lab. Komputer</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 py-2 d-flex flex-column align-items-center">
+          <span class="fs-7 lh-1">8</span>
+          <span class="fs-4">Program Studi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mitra -->
+  <div class="bg-white">
+    <div class="container py-5">
+      <div class="d-flex flex-column align-items-center mb-5">
+        <h3 class="fw-bold text-secondary text-center">Mitra Kami</h3>
+        <div class="divider-2 mb-2 mt-1"></div>
+        <span class="text-body-tertiary">Berita Terbaru Seputar Jurusan Teknologi Informasi</span>
+      </div>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/Microsoft-Academy-Logo1-pjbyvmmyq0ub88xwe3vopmbzitv6go1pz8hvsnmsy8.png"
+            title="Microsoft-Academy-Logo1" alt="Microsoft-Academy-Logo1" loading="lazy">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/Cisco-Academi-pjbywcygccjd3cbgkqo5we0zcvjqf8yghs33gt6u9g.jpg"
+            title="Cisco Academi" alt="Cisco Academi" loading="lazy">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/logo_aws-educate_light.8a107f05996892b795db30104d5fb968d4619246-pjbyweu4s7jo8z1ruaq3v44bjfqf3cj12lsnfhno28.png"
+            title="logo_aws-educate_light.8a107f05996892b795db30104d5fb968d4619246"
+            alt="logo_aws-educate_light.8a107f05996892b795db30104d5fb968d4619246" loading="lazy">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/mikrotik-academy-logo-pjbywgpsuwxd6bvbo0sjvx9nmesxd5q1bb5gnvkkbq.jpg"
+            title="mikrotik-academy-logo" alt="mikrotik-academy-logo" loading="lazy">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/oracle-academy-logo1-800x343-2-pjbzq0r3p6g5ouea2nmam0m11eu218hyjooqpojsme.png"
+            title="oracle-academy-logo1-800×343 2" alt="oracle-academy-logo1-800x343 2" loading="lazy">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-flex justify-content-center">
+          <img decoding="async" class="p-3"
+            src="https://ti.pnp.ac.id/wp-content/uploads/elementor/thumbs/redhat-academy-qkc459ruheb7dbxc5wwfksnw7woe9y9h4hxawuwso6.png"
+            title="redhat-academy" alt="redhat-academy" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="position-absolute">
+      <path fill="white" opacity="0.33"
+        d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+      </path>
+      <path fill="white" opacity="0.66"
+        d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+      </path>
+      <path fill="white"
+        d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+      </path>
+    </svg>
+  </div>
+  <div class="bg-primary py-5">
+    <div class="container pt-5 mt-5">
+      <div class="row py-5 mt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 py-1">
+          <div class="card bg-dark p-2 rounded-4">
+            <div class="card-header">
+              <h2 class="text-white">Pengumuman</h2>
+              <div class="divider"></div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <div class="bg-image-pengumuman-1 w-100 position-relative">
+                    <div
+                      class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+                      <span class="fs-6 lh-1 fw-light mb-2">Pekan IT Politeknik Negeri Padang 2023: The Digital
+                        Revolution
+                        –…</span>
+                      <span class="fs-6 lh-1 fw-light">August 21, 2024</span>
+                    </div>
+                    <div class="text-gradient-2 z-1 position-absolute top-0 w-100 h-100"></div>
+                  </div>
+                </div>
+                <div class="col-6 p-1">
+                  <div class="bg-image-pengumuman-2 w-100 position-relative">
+                    <div
+                      class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+                      <span class="fs-6 lh-1 fw-light mb-2">Kuliah Umum : Membangun Digital Talent berkarakter untuk
+                        kemandirian
+                        teknologi…</span>
+                      <span class="fs-6 lh-1 fw-light">August 21, 2024</span>
+                    </div>
+                    <div class="text-gradient-2 z-1 position-absolute top-0 w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a class="btn btn-primary px-5 py-3" href="https://ti.pnp.ac.id/index.php/pengumuman/">Lainnya
+                  &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 py-1">
+          <div class="card bg-dark p-2 rounded-4">
+            <div class="card-header">
+              <h2 class="text-white">Prestasi Mahasiswa</h2>
+              <div class="divider"></div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-6 p-1">
+                  <div class="bg-image-prestasi-1 w-100 position-relative">
+                    <div
+                      class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+                      <span class="fs-6 lh-1 fw-light mb-2">Tim Peridot Raih Juara 2 di HACKATHON 4.0</span>
+                      <span class="fs-6 lh-1 fw-light">August 21, 2024</span>
+                    </div>
+                    <div class="text-gradient-2 z-1 position-absolute top-0 w-100 h-100"></div>
+                  </div>
+                </div>
+                <div class="col-6 p-1">
+                  <div class="bg-image-prestasi-2 w-100 position-relative">
+                    <div
+                      class="text-hover h-100 p-3 position-absolute z-2 d-flex flex-column justify-content-end text-white">
+                      <span class="fs-6 lh-1 fw-light mb-2">Tim PKM PM Politeknik Negeri Padang Rancang Website Untuk
+                        Rumah
+                        Singgah
+                        Pasien
+                        M.Ihpan</span>
+                      <span class="fs-6 lh-1 fw-light">August 21, 2024</span>
+                    </div>
+                    <div class="text-gradient-2 z-1 position-absolute top-0 w-100 h-100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer d-flex justify-content-center">
+                <a class="btn btn-primary px-5 py-3" href="https://ti.pnp.ac.id/index.php/prestasi-mahasiswa/">Lainnya
+                  &raquo;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer bg-dark py-5">
+    <div class="container text-white">
+      <div class="row align-items-start">
+        <div class="col-lg-3 col-12">
+          <img src="https://ti.pnp.ac.id/wp-content/uploads/2022/01/logoti3-white.png" alt="">
+          <p class="m-0">Kampus Politeknik Negeri Padang, Limau Manis Padang</p>
+          <p class="m-0">Kode Pos: 25176</p>
+          <p class="m-0">Phone: 0751-72590</p>
+        </div>
+        <div class="col-lg-3 col-12">
+          <h4>OUR ACADEMY</h4>
+          <ul>
+            <li>Mikrotik Academy</li>
+            <li>Redhat Academy</li>
+            <li>Oracle Academy</li>
+            <li>AWS Educate</li>
+            <li>Cisco Networking Academy</li>
+            <li>Microsoft IT Academy</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li>Academy</li>
+            <li>Akreditasi</li>
+            <li>Fasilitas</li>
+            <li>Jurnal</li>
+            <li>Saran dan Masukan</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+          <h4>Follow Us</h4>
+          <ul class="d-flex justify-content-start p-0" style="list-style-type: none;">
+            <li class="fs-1 rounded-circle pe-3"><a
+                href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID"><i
+                  class="fa-brands fa-facebook"></i></a></li>
+            <li class="fs-1 rounded-circle px-3"><a href="https://www.youtube.com/@teknologiinformasi-politek6397"><i
+                  class="fa-brands fa-youtube" style="color: #dc3838;"></i></a></li>
+            <li class="fs-1 rounded-circle px-3"><a href="https://www.instagram.com/teknologiinformasipnp/"><i
+                  class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="position-relative py-5">
+        <div class="divider-100 bg-dark-subtle position-absolute"></div>
+        <a href="#top"
+          class="btn btn-dark px-4 py-2 border border-dark-subtle rounded-1 position-absolute top-50 start-50 translate-middle">TOP</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <span class="text-white">Jurusan Teknologi Informasi</span>
+        <div class="">
+          <a class="btn btn-dark broder border-dark-subtle"
+            href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="btn btn-dark broder border-dark-subtle"
+            href="https://www.youtube.com/@teknologiinformasi-politek6397">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a class="btn btn-dark broder border-dark-subtle" href="https://www.instagram.com/teknologiinformasipnp/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
