@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Furqon August Seventeenth">
+    <title>Jurusan Teknologi Informasi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css"
+        integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+        integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fs-7 {
+            font-size: 69px;
+        }
+
+        .bg-image {
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2022/01/5039684-scaled.jpg');
+        }
+
+        .bg-image-content-1 {
+            background-size: cover;
+            height: 300px;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/08/IMG_4633-scaled.jpg');
+            background-position: center;
+        }
+
+        .bg-image-content-2 {
+            background-size: cover;
+            height: 300px;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/IMG-20240726-WA0093.jpg');
+            background-position: center;
+        }
+
+        .bg-image-content-3 {
+            background-size: cover;
+            height: 300px;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-26-at-12.57.29_3e225de4.jpg');
+            background-position: center;
+        }
+
+        .bg-image-content-4 {
+            background-size: cover;
+            height: 300px;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-26-at-12.51.12_9aa7eab1-scaled.jpg');
+            background-position: center;
+        }
+
+        .bg-image-content-5 {
+            background-size: cover;
+            height: 300px;
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg');
+            background-position: center;
+        }
+
+        .bg-image-pengumuman-1 {
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2023/10/pekan-it-scaled.jpg');
+            background-size: cover;
+            height: 300px;
+            background-position: center;
+        }
+
+        .bg-image-pengumuman-2 {
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2022/06/Kuliah-Umum.jpeg');
+            background-size: cover;
+            height: 300px;
+            background-position: center;
+        }
+
+        .bg-image-prestasi-1 {
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/pkm.jpg');
+            background-size: cover;
+            height: 300px;
+            background-position: center;
+        }
+
+        .bg-image-prestasi-2 {
+            background-image: url('https://ti.pnp.ac.id/wp-content/uploads/2024/07/hack4.png');
+            background-size: cover;
+            height: 300px;
+            background-position: center;
+        }
+
+        .text-gradient {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(96, 91, 229, 0.87) 100%);
+            padding: 1rem;
+            color: white;
+            transition-duration: 0.7s;
+        }
+
+        .text-gradient-2 {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 46%, rgba(122, 122, 122, 0.87) 100%);
+            padding: 1rem;
+            color: white;
+            transition-duration: 0.7s;
+        }
+
+        .text-hover:hover~.text-gradient,
+        .text-hover:hover~.text-gradient-2 {
+            opacity: 0.5;
+        }
+
+        .divider {
+            width: 60px;
+            height: 5px;
+            background-color: rgb(0, 162, 255);
+        }
+
+
+        .divider-3 {
+            width: 200px;
+            height: 5px;
+            background-color: rgb(0, 162, 255);
+        }
+
+        .divider-2 {
+            width: 150px;
+            height: 5px;
+            background-color: rgb(0, 162, 255);
+        }
+
+        .divider-100 {
+            width: 100%;
+            height: 1px;
+        }
+
+        .dropdown-menu {
+            padding: 0;
+        }
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu>li>a:hover {
+            background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+        }
+
+        .dropdown-menu {
+            border-radius: 0;
+        }
+
+        .dropdown>.dropdown-toggle:active {
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body class="">
+    <!-- Heading -->
+    <div class="bg-primary bg-gradient">
+        <div class="container d-flex justify-content-end">
+            <i class="py-2 px-3 bi bi-facebook text-white border-start border-light"
+                style="--bs-border-opacity: .15;"></i>
+            <i class="py-2 px-3 bi bi-instagram text-white border-start border-light"
+                style="--bs-border-opacity: .15;"></i>
+            <i class="py-2 px-3 bi bi-youtube text-white border-start border-light"
+                style="--bs-border-opacity: .15;"></i>
+            <i class="py-2 px-3 bi bi-search text-white border-start border-end border-light"
+                style="--bs-border-opacity: .15;"></i>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="assets/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="tujuan-strategis.html">Tujuan Strategis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Study Programs
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item" href="tekom.html">D3 Teknik Komputer</a></li>
+                            <li><a class="dropdown-item" href="mi.html">D3 Manajemen Informatika</a></li>
+                            <li><a class="dropdown-item" href="trpl.html">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="animasi.html">D4 Animasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <div class="bg-body-secondary">
+        <div class="container d-flex justify-content-between align-items-center py-4">
+            <span class="fs-3">Visi dan Misi</span>
+            <a class="nav-link text-body-secondary" href="/">HOME</a>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container py-4 text-body-secondary lh-lg">
+        <div class="visi">
+            <span class="fw-semibold">Visi :</span>
+            <p>
+                Pada tahun 2025 menjadi institusi pendidikan vokasional terbaik tingkat nasional dibidang Teknologi
+                Informasi, Bermartabat dan berwawasan Internasional
+            </p>
+        </div>
+
+        <div class="misi">
+            <span class="fw-semibold">Misi :</span>
+            <ol>
+                <li>Menyelenggarakan pendidikan vokasional dibidang Teknologi Informasi yang sesuai dengan perkembangan
+                    ilmu pengetahuan dan teknologi yang berwawasan Internasional.</li>
+                <li>Menyelanggarakan penelitian yang inovatif dan adaptif dibidang Teknologi Informasi untuk
+                    pengembangan ilmu pengetahuan dan teknologi.</li>
+                <li>Menerapkan ilmu pengetahuan dan teknologi dalam rangka memecahkan masalah dan meningkatkan taraf
+                    hidup masyarakat dibidang Teknologi Informasi.</li>
+                <li>Menjalin kerjasama yang produktif dan berkelanjutan dengan lembaga pendidikan, pemerintahan dan
+                    dunai usaha ditingkat Nasional dan Internasional dibidang Teknologi Informasi.</li>
+            </ol>
+        </div>
+
+        <div class="other">
+            <p>Jurusan Teknologi Informasi memiliki empat tujuan yang merupakan turunan dari tujuan Politeknik Negeri
+                Padang yang, sebagai berikut:</p>
+            <ol>
+                <li>Menghasilkan lulusan dibidang Teknologi Informasi yang kompeten, berdaya saing antar bangsa,
+                    bermartabat dan dan bertaqwa kepada Tuhan Yang Maha Esa</li>
+                <li>Menghasilkan penelitian dibidang Teknologi Informasi yang bermanfaat dan pengembangan dan penerapan
+                    ilmu pengetahuan dan teknologi, pencapaian hak atas kekayaan intelektual (HKI) dan paten</li>
+                <li>Menghasilkan karya pengabdian kepada masyarakat dibidang Teknologi Informasi yang berbasis pada
+                    teknologi terapan untuk meningkatkan kesejahteraan masyarakat</li>
+                <li>Terwujudnya kerjasama dengan berbagai pihak, baik dalam maupun luar negeri yang saling menguntungkan
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-dark py-5">
+        <div class="container text-white">
+            <div class="row align-items-start">
+                <div class="col-lg-3 col-12">
+                    <img src="https://ti.pnp.ac.id/wp-content/uploads/2022/01/logoti3-white.png" alt="">
+                    <p class="m-0">Kampus Politeknik Negeri Padang, Limau Manis Padang</p>
+                    <p class="m-0">Kode Pos: 25176</p>
+                    <p class="m-0">Phone: 0751-72590</p>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h4>OUR ACADEMY</h4>
+                    <ul>
+                        <li>Mikrotik Academy</li>
+                        <li>Redhat Academy</li>
+                        <li>Oracle Academy</li>
+                        <li>AWS Educate</li>
+                        <li>Cisco Networking Academy</li>
+                        <li>Microsoft IT Academy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h4>USEFUL LINKS</h4>
+                    <ul>
+                        <li>Academy</li>
+                        <li>Akreditasi</li>
+                        <li>Fasilitas</li>
+                        <li>Jurnal</li>
+                        <li>Saran dan Masukan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <h4>Follow Us</h4>
+                    <ul class="d-flex justify-content-start p-0" style="list-style-type: none;">
+                        <li class="fs-1 rounded-circle pe-3"><a
+                                href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID"><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li class="fs-1 rounded-circle px-3"><a
+                                href="https://www.youtube.com/@teknologiinformasi-politek6397"><i
+                                    class="fa-brands fa-youtube" style="color: #dc3838;"></i></a></li>
+                        <li class="fs-1 rounded-circle px-3"><a
+                                href="https://www.instagram.com/teknologiinformasipnp/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position-relative py-5">
+                <div class="divider-100 bg-dark-subtle position-absolute"></div>
+                <a href="#top"
+                    class="btn btn-dark px-4 py-2 border border-dark-subtle rounded-1 position-absolute top-50 start-50 translate-middle">TOP</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <span class="text-white">Jurusan Teknologi Informasi</span>
+                <div class="">
+                    <a class="btn btn-dark broder border-dark-subtle"
+                        href="https://www.facebook.com/teknologiinformasipnp/?locale=id_ID">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="btn btn-dark broder border-dark-subtle"
+                        href="https://www.youtube.com/@teknologiinformasi-politek6397">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-dark broder border-dark-subtle"
+                        href="https://www.instagram.com/teknologiinformasipnp/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
